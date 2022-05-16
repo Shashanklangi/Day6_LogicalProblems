@@ -13,6 +13,7 @@ namespace LogicalProblems
             Console.WriteLine("1 Fibonacci Series.");
             Console.WriteLine("2 Prime Number.");
             Console.WriteLine("3 Perfect Number.");
+            Console.WriteLine("4 Reverse Number.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program Logic = new Program();
@@ -30,8 +31,12 @@ namespace LogicalProblems
                     PerfectNumber perfect = new PerfectNumber();
                     perfect.Perfect();
                     break;
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();    
+                    reverse.Reverse();
+                    break;
                 default:
-                    Console.WriteLine("Enter the valid nmber from 1 to 3");
+                    Console.WriteLine("Enter the valid nmber from 1 to 4");
                     break;
 
             }
