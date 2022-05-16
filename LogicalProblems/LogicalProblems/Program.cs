@@ -14,6 +14,7 @@ namespace LogicalProblems
             Console.WriteLine("2 Prime Number.");
             Console.WriteLine("3 Perfect Number.");
             Console.WriteLine("4 Reverse Number.");
+            Console.WriteLine("5 Stop Watch.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program Logic = new Program();
@@ -35,8 +36,12 @@ namespace LogicalProblems
                     ReverseNumber reverse = new ReverseNumber();    
                     reverse.Reverse();
                     break;
+                case 5:
+                    StopWatch stop = new StopWatch();
+                    stop.Timer();
+                    break;
                 default:
-                    Console.WriteLine("Enter the valid nmber from 1 to 4");
+                    Console.WriteLine("Enter the valid nmber from 1 to 5");
                     break;
 
             }
