@@ -9,9 +9,28 @@ namespace LogicalProblems
         }
         public static void Main(string[] args)
         {
-            FibonacciSeries series = new FibonacciSeries();
-            series.Fibonacci();
-        }
+            Console.WriteLine("Enter the number for problem.\n");
+            Console.WriteLine("1 Fibonacci Series.");
+            Console.WriteLine("2 Prime Number.");
 
+            int problem = Convert.ToInt32(Console.ReadLine());
+            Program Logic = new Program();
+            switch (problem)
+            {
+                case 1:
+                    FibonacciSeries series = new FibonacciSeries();
+                    series.Fibonacci();
+                    break;
+                case 2:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.Prime();
+                    break;
+                default:
+                    Console.WriteLine("Enter the valid nmber from 1 to 2");
+                    break;
+
+            }
+
+        }
     }
 }
